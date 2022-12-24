@@ -1,10 +1,8 @@
 # hibernate-plain
 
-Boilerplate code used to create ORM Hibernate connections with the corresponding base repository classes. 
-Uses ```reflections``` library to find all the classes annotated with ```@Entity``` in the classpath. 
-Extracted from old projects. 
+The boilerplate code extracted from old projects', consists of utility classes to provide a convenient way of working with Hibernate core module in a singleton manner. Uses ```reflections``` to look up POJO classes.
 
-#### Example of the utility HibernateInitializer class instantiation
+#### Example of the HibernateInitializer instantiation.
 ```
 HibernateInitializer.install(
     "org.project.core.data.pojo",
